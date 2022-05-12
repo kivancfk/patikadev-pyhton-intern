@@ -1,0 +1,32 @@
+Proje 1
+[22,27,16,2,18,6] -> Insertion Sort
+
+1. Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+2. Big-O gösterimini yazınız.
+3. Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
+4. Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+5. [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+
+
+Çözüm:
+1.
+- 22 < 27 : Değişiklik yok. [22, 27, 16, 2, 18, 6]
+- 16 < 27: 16 ile 27'yi yer değiştir. 16 < 22: 16 ile 22'yi yer değiştir. [16, 22, 27, 2, 18, 6]
+- 2<27: 2 ile 27'yi yer değiştir. 2<22: 2 ile 22'yi yer değiştir. 2<16: 2 ile 16'yı yer değiştir.  [2, 16, 22, 27, 18, 6]
+- 18<27: 18 ile 27'yi yer değiştir.  18<22: 18 ile 22'yi yer değiştir.  16<18: Değişiklik yok. [2, 16, 18, 22, 27, 6]
+- 6<27: 6 ile 27'yi yer değiştir.  6<22: 6 ile 22'yi yer değiştir. 6<18: 6 ile 18'i yer değiştir.  6<16: 6 ile 16'yı yer değiştir. 2<6: Değişiklik yok. [2, 6, 16, 18, 22, 27]
+
+2. O(n^2)
+
+3. 
+Average case  : O(n^2)
+Worst case    : O(n^2)
+Best case     : O(n)
+
+4. 18 ortada yer aldığı için average case kapsamına girer.
+
+5.
+5.1. [3,7,5,8,2,9,4,15,6] 
+5.2. [3,5,7,8,2,9,4,15,6] 
+5.3. [3,5,7,8,2,9,4,15,6] 
+5.4. [2,3,5,7,8,9,4,15,6]
